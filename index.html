@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Train Schedules</title>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+	<!-- BootStrap Links -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+	
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<script src="https://use.fontawesome.com/ae85989865.js"></script>
+
+	
+</head>
+<body>
+<div class="container wrapper">
+	<div class="jumbotron header">
+		<h1 class="text-center"><i class="fa fa-train fa-1x" aria-hidden="true"></i>Train Schedules</h1>
+	</div>
+
+	<div class="row train-schedule">
+		<div class="col-sm-12">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title text-center"><strong><i class="fa  fa-table"></i>   Schedule Table</strong></h3>
+				</div>
+				<div class="panel-body schedule">
+					<div class="row schedule-line-header">
+						<div class="col-sm-3 lead trainNameHead textHead">Train Name</div>
+						<div class="col-sm-3 lead trainDestHead textHead">Destination</div>	
+						<div class="col-sm-2 lead freqHead textHead">Frequency (mins)</div>
+						<div class="col-sm-2 lead nextArrivalHead textHead">Next Arrival</div>
+						<div class="col-sm-2 lead minsAwayHead textHead">Minutes Away</div>
+					</div>
+					<!-- Enter train schedules here -->
+<!-- 					<div class="row schedule-line">
+						<div class="col-sm-3 trainName textEntry">Trenton Express</div>
+						<div class="col-sm-3 trainDest textEntry">Trenton</div>	
+						<div class="col-sm-2 freq textEntry">25</div>
+						<div class="col-sm-2 nextArrival textEntry">05:35</div>
+						<div class="col-sm-2 minsAway textEntry">10</div>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row train-input">
+		<div class="col-sm-12">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title text-center"><strong><i class="fa  fa-list-alt"></i>   Add Train</strong></h3>
+				</div>
+				<div class="panel-body">
+					<form role="form">
+		              <div class="form-group">
+		                <label for="search">Train Name</label>
+		                <input type="text" class="form-control" id="train-name">
+		              </div>
+		              <div class="form-group">
+		                <label for="search">Destination</label>
+		                <input type="text" class="form-control" id="destination">
+		              </div>
+		              <div class="form-group">
+		                <label for="search">First Train Time (HH:MM - military time)</label>
+		                <input type="text" class="form-control" id="first-time">
+		              </div>
+		              <div class="form-group">
+		                <label for="search">Frequency (mins)</label>
+		                <input type="text" class="form-control" id="frequency">
+		              </div>
+		              <button type="submit" class="btn btn-default" id="submit"><i class="fa fa-plus-square"></i> Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

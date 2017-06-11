@@ -1,0 +1,75 @@
+.header {
+	color: #fff;
+	background-color: #86b79d;
+	font-family: 'Oswald', serif;
+	padding-top: 1.5%;
+	padding-bottom: 2%;
+	margin-top: 1%;
+}
+.fa-train {
+	padding-right: 2.5%;
+}
+.panel > .panel-heading {
+	background: transparent;
+	background: #86b79d;
+	border-color: #86b79d;
+}
+.panel {
+	border-color: #86b79d;
+	margin-top: -1.5%;
+}
+.schedule-line {
+	border-bottom: solid 1px #86b79d;
+	padding-bottom: .3%;
+}
+.textHead {
+	padding-top: 0px;
+	margin-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	font-size: 125%;
+	font-weight: 600;
+	color: #86b79d;
+}
+.textEntry {
+	margin-top: .45%;
+	font-size: 105%;
+	font-weight: 500;
+}
+.train-input {
+	margin-top: 1%;
+}
+button[type="submit"] {
+	background: transparent;
+	background: #86b79d;
+	border-color: #86b79d;
+	text-shadow: none;
+	color: #fff;
+}
+button[type="submit"]:hover {
+	background: transparent;
+	background: #a9d1bb;
+	border-color: #86b79d;
+	text-shadow: none;
+	color: #fff;
+}
+#submit:focus, #submit:active {
+	background: transparent;
+	background: #a9d1bb;
+	border-color: #86b79d;
+	text-shadow: none;
+	color: #fff;
+	border-color: #86b79d;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgb(134, 183, 157);
+	outline: 0 none;
+}
+.button-default:focus , .button-default:active {
+
+}
+.form-control:focus {
+  border-color: #86b79d;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgb(134, 183, 157);
+}
+.form-group label {
+	color: #86b79d;
+}
