@@ -27,7 +27,7 @@
           name: name,
           destination: destination,
           firstTime: firstTime,
-          frequency: frequency,l,
+          frequency: frequency,
           minsAway: minsAway
       });
 
