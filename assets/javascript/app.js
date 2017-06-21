@@ -27,8 +27,7 @@
           name: name,
           destination: destination,
           firstTime: firstTime,
-          frequency: frequency,
-          minsAway: minsAway
+          frequency: frequency
       });
 
       $("#train-name").val("");
